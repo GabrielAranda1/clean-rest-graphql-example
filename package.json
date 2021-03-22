@@ -1,0 +1,27 @@
+{
+  "name": "clean-ranking-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "start": "node dist/src/main/server.js",
+    "build": "rimraf dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.21.2",
+    "apollo-server-express": "^2.21.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "rimraf": "^3.0.2"
+  },
+  "_moduleAliases": {
+    "@": "dist/src/"
+  }
+}
